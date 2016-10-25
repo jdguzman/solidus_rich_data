@@ -1,0 +1,72 @@
+<div data-hook="admin_general_setting_show_entity_markup">
+  <%= f.field_container :show_entity_markup do %>
+    <%= f.check_box :show_entity_markup  %>
+    <%= f.label :show_entity_markup %>
+    <%= f.error_message_on :show_entity_markup %>
+  <% end %>
+</div>
+
+<div data-hook="admin_general_setting_facebook_id">
+  <%= f.field_container :facebook_id do %>
+    <%= f.label :facebook_id %>
+    <%= f.text_field :facebook_id,
+        class: 'fullwidth',
+        placeholder: '1234578'  %>
+    <%= f.error_message_on :facebook_id %>
+    <small><u><%= link_to Spree.t('admin.general_settings.edit.find_your_id', item: 'Facebook'), 'http://findmyfbid.com', target: '_blank' %></u></small>
+  <% end %>
+</div>
+
+<div data-hook="admin_general_setting_twitter_id">
+  <%= f.field_container :twitter_id do %>
+    <%= f.label :twitter_id %>
+    <%= f.text_field :twitter_id, class: 'fullwidth',
+        placeholder: '1234578'  %>
+    <%= f.error_message_on :twitter_id %>
+    <small><u><%= link_to Spree.t('admin.general_settings.edit.find_your_id', item: 'Twitter'), 'http://gettwitterid.com', target: '_blank' %></u></small>
+  <% end %>
+</div>
+
+<div data-hook="admin_general_setting_social_image_url">
+  <%= f.field_container :social_image_url do %>
+    <%= f.label :social_image_url %>
+    <%= f.text_field :social_image_url, class: 'fullwidth'  %>
+    <%= f.error_message_on :social_image_url %>
+  <% end %>
+</div>
+
+<div data-hook="admin_general_setting_facebook_url">
+  <%= f.field_container :facebook_url do %>
+    <%= f.label :facebook_url %>
+    <%= f.text_field :facebook_url, class: 'fullwidth',
+        placeholder: 'https://www.facebook.com/ExampleStore'  %>
+    <%= f.error_message_on :facebook_url %>
+  <% end %>
+</div>
+
+<div data-hook="admin_general_setting_linkedin_url">
+  <%= f.field_container :linkedin_url do %>
+    <%= f.label :linkedin_url %>
+    <%= f.text_field :linkedin_url, class: 'fullwidth',
+        placeholder: 'https://www.linkedin.com/company/ExampleStore'  %>
+    <%= f.error_message_on :linkedin_url %>
+  <% end %>
+</div>
+
+<div data-hook="admin_general_setting_pinterest_url">
+  <%= f.field_container :pinterest_url do %>
+    <%= f.label :pinterest_url %>
+    <%= f.text_field :pinterest_url, class: 'fullwidth',
+        placeholder: 'https://pinterest.com/ExampleStore'  %>
+    <%= f.error_message_on :pinterest_url %>
+  <% end %>
+</div>
+
+<div data-hook="admin_general_setting_twitter_url">
+  <%= f.field_container :twitter_url do %>
+    <%= f.label :twitter_url %>
+    <%= f.text_field :twitter_url, class: 'fullwidth',
+        placeholder: 'https://twitter.com/ExampleStore'  %>
+    <%= f.error_message_on :twitter_url %>
+  <% end %>
+</div>

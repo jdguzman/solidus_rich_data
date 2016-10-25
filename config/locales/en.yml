@@ -1,0 +1,17 @@
+---
+en:
+  spree:
+    admin:
+      general_settings:
+        edit:
+          find_your_id: "Find your %{item} ID here"
+    rich_data:
+      social_title:
+        default: "Buy at %{site}"
+        product: "Buy %{product} at %{site}"
+        taxon: "Buy %{taxon} at %{site}"
+      social_description:
+        default: "Buy at %{site} because"
+        product: "Buy %{product} at %{site} because"
+        taxon: "Buy %{taxon} at %{site} because"
+

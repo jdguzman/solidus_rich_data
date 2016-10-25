@@ -1,0 +1,12 @@
+<% if current_store.show_entity_markup? %>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "<%= current_store.name %>",
+  "url" : "<%= root_url %>",
+  "logo": "<%= @person_img_url %>",
+  "sameAs": <%= raw external_urls %>
+}
+</script>
+<% end %>
