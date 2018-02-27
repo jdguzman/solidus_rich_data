@@ -18,8 +18,8 @@ Deface::Override.new(virtual_path: 'spree/layouts/spree_application',
                      partial: 'spree/shared/entity_markup',
                      disabled: false)
 
-Deface::Override.new(virtual_path: 'spree/admin/general_settings/edit',
+Deface::Override.new(virtual_path: 'spree/admin/stores/_form',
                      name: 'add_rich_data_form_extension',
-                     insert_bottom: 'div[data-hook=\'admin_general_setting_mail_from_address\']',
+                     insert_before: "erb[loud]:contains('f.field_container :mail_from_address do')",
                      partial: 'spree/admin/general_settings/rich_data_fields',
                      disabled: false)
